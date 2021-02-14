@@ -1,0 +1,89 @@
+.faq
+  background-color: rgb(15, 15, 15)
+  color: #fff
+  &__items 
+    max-width: 850px
+    padding-left: 20px
+    padding-right: 20px
+    margin: 0 auto
+    padding-bottom: 60px
+  &__item
+    margin-bottom: 16px
+    &-title
+      font-size: 18px
+      line-height: 23px
+      padding-top: 28px
+      padding-bottom: 27px
+      background-color: #000
+      padding-left: 34px
+      font-weight: 700
+      position: relative
+      cursor: pointer
+      &::after
+        content: url(../img/plus-faq.svg)
+        position: absolute
+        top: 25px
+        right: 33px
+    &-text
+      display: none
+      font-size: 15px
+      line-height: 19px
+      padding: 37px 84px 36px 38px
+      background-color: rgb(26, 26, 26)
+      & a 
+        text-decoration: none
+        color: rgb(224, 122, 0)
+  &__item--active
+    & .faq__item-text
+      display: block
+  &__questions
+    background-color: rgb(11, 11, 11)
+    max-width: 850px
+    padding-left: 20px
+    padding-right: 20px
+    margin: 0 auto
+    &-bg
+      background-color: rgb(11, 11, 11)
+    &-title
+      font-size: 30px
+      line-height: 39px
+      padding-top: 63px
+      padding-bottom: 28px
+      font-weight: 700
+    &-buttons
+      padding-bottom: 21px
+      & a
+        text-decoration: none
+        color: #fff
+        font-size: 16px 
+        line-height: 20px
+        color: rgb(134, 134, 134)
+        border-bottom: 1px dashed
+        margin-right: 20px
+  &__title  
+    padding-top: 21px
+    font-size: 40px
+    line-height: 52px
+    padding-bottom: 4px
+    font-weight: 700
+    text-align: center
+  &__desc
+    font-size: 18px
+    line-height: 23px
+    padding-bottom: 76px
+    text-align: center
+  &__menu
+    padding-top: 41px
+    & a
+      color: #fff
+      text-decoration: none
+      font-size: 14px
+      position: relative
+      padding-right: 19px
+    & .black
+      color: rgb(80, 80, 80)
+    & i 
+      font-size: 7px
+      position: absolute
+      left: -13px
+      top: 6px

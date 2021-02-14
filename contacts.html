@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skalodrom</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="black-page">
+  <div class="overlay"></div>
+
+  <header class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="navbar__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="navbar__logo">
+          <a href="#">
+            <img src="img/logo.png" alt="">
+          </a>
+        </div>
+        <div class="navbar__row">
+          <div class="navbar__mob">
+            <div class="navbar__mob-logo">
+              <a href="#">
+                <img src="img/logo.png" alt="">
+              </a>
+            </div>
+            <div class="navbar__close">
+              <img src="img/close.png" alt="">
+            </div>
+          </div>
+          <div class="navbar__item">
+            <a href="#">О КЛУБЕ <i class="fas fa-chevron-up"></i> </a>
+            <ul>
+              <li><a href="comand.php">Наша команда</a></li>
+              <li><a href="#">Корпоратив</a></li>
+              <li><a href="#">Тимбилдинг</a></li>
+              <li><a href="#">Семинары</a></li>
+              <li><a href="#">Детский день рождения</a></li>
+              <li><a href="#">Выезды</a></li>
+            </ul>
+          </div>
+          <div class="navbar__item">
+            <a href="#">УСЛУГИ<i class="fas fa-chevron-up"></i></a>
+            <ul>
+              <li><a href="#">Соревнования</a></li>
+              <li><a href="#">Корпоратив</a></li>
+              <li><a href="#">Тимбилдинг</a></li>
+              <li><a href="#">Семинары</a></li>
+              <li><a href="#">Детский день рождения</a></li>
+              <li><a href="#">Выезды</a></li>
+            </ul>
+          </div>
+          <div class="navbar__item">
+            <a href="#">МЕРОПРИЯТИЯ <i class="fas fa-chevron-up"></i></a>
+            <ul>
+              <li><a href="#">Соревнования</a></li>
+              <li><a href="#">Корпоратив</a></li>
+              <li><a href="#">Тимбилдинг</a></li>
+              <li><a href="#">Семинары</a></li>
+              <li><a href="#">Детский день рождения</a></li>
+              <li><a href="#">Выезды</a></li>
+            </ul>
+          </div>
+          <div class="navbar__item"><a href="#">РАСПИСАНИЕ</a></div>
+          <div class="navbar__item"><a href="#">ДЕТЯМ</a></div>
+          <div class="navbar__item"><a href="#">НОВИЧКАМ</a></div>
+          <div class="navbar__item"><a href="#">ЦЕНЫ</a></div>
+          <div class="navbar__item"><a href="#">КОНТАКТЫ</a></div>
+        </div>
+        <div class="navbar__right">
+          <div class="navbar__language"><a href="#">UA <i class="fas fa-chevron-up"></i></a>
+            <ul>
+              <li><a href="#">RU</a></li>
+              <li><a href="#">ENG</a></li>
+            </ul>
+          </div>
+          <div class="navbar__mark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13.97" height="18.803" viewBox="0 0 13.97 18.803">
+              <g id="pin" transform="translate(-47.93 0.15)">
+                <g id="Сгруппировать_516" data-name="Сгруппировать 516" transform="translate(48.08)">
+                  <g id="Сгруппировать_515" data-name="Сгруппировать 515" transform="translate(0)">
+                    <path id="mark_1" data-name="Контур 353"
+                      d="M54.915,0A6.843,6.843,0,0,0,48.08,6.835a7.886,7.886,0,0,0,.58,2.631,11.022,11.022,0,0,0,.79,1.478l4.686,7.1a.891.891,0,0,0,1.558,0l4.687-7.1a10.977,10.977,0,0,0,.79-1.478,7.884,7.884,0,0,0,.579-2.631A6.843,6.843,0,0,0,54.915,0Zm5.514,9.154a10.1,10.1,0,0,1-.72,1.347l-4.687,7.1c-.092.14-.122.14-.214,0l-4.687-7.1a10.1,10.1,0,0,1-.72-1.347,7.158,7.158,0,0,1-.517-2.319,6.031,6.031,0,1,1,12.062,0A7.164,7.164,0,0,1,60.429,9.154Z"
+                      transform="translate(-48.08)" fill="#fff" stroke="#fff" stroke-width="0.3" />
+                    <path id="mark_2" data-name="Контур 354"
+                      d="M115.7,64.008a3.619,3.619,0,1,0,3.619,3.619A3.623,3.623,0,0,0,115.7,64.008Zm0,6.433a2.814,2.814,0,1,1,2.814-2.814A2.818,2.818,0,0,1,115.7,70.441Z"
+                      transform="translate(-108.864 -60.791)" fill="#fff" stroke="#fff" stroke-width="0.3" />
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <ul>
+              <li><a href="#">г. Киев, ул. Борщаговская, 154<br>
+                  ТРЦ Мармелад, <span>6й этаж</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar__contacts">
+            <div class="navbar__discussin">
+
+            </div>
+            <a class="navbar__phone" href="tel:+0738773443">
+            <span>073 877 34 43</span>
+            <i class="fas fa-phone-alt"></i>
+            </a>
+            <button class="navbar__button"><span>Записаться на тренировку</span></button>
+            <ul>
+              <li><a href="tel:0988773443"><img class="phone_logo" src="img/kyivstar.png" alt=""> 098 877 34 43</a></li>
+              <li><a href="tel:0988773443"><img class="phone_logo" src="img/vodafone-icon.svg" alt=""> 098 877 34 43</a>
+              </li>
+              <li class="contacts_icons">
+                <a href="#"><img src="img/telegram.svg" alt=""></a>
+                <a href="#"><img src="img/viber.svg" alt=""></a>
+                <a href="#"><img src="img/facebook-messenger-3.svg" alt=""></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <section class="contacts-page">
+        <div class="container">
+        <div class="breadcrumbs">
+            <a href="#">Главная</a>
+            <a href="#"><i class="fas fa-chevron-right"></i> Контакты</a>
+        </div>
+        <h1 class="contacts-page__title title">Контакты</h1>
+           <div class="contacts-page__inner">
+            <div class="contacts-page__content">
+                <div class="contacts-page__phones">
+                    <div class="contacts-page__phone">
+                        <a href="tel:0738773443">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>073 877 34 43</span>
+                        </a>
+                    </div>
+                    <div class="contacts-page__phone">
+                        <a href="tel:0738773443">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>073 877 34 43</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contacts-page__address">
+                    <div class="contacts-page__address-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13.97" height="18.803" viewBox="0 0 13.97 18.803">
+                            <g id="pin" transform="translate(-47.93 0.15)">
+                                <g id="Сгруппировать_516" data-name="Сгруппировать 516" transform="translate(48.08)">
+                                <g id="Сгруппировать_515" data-name="Сгруппировать 515" transform="translate(0)">
+                                    <path id="mark_1" data-name="Контур 353"
+                                    d="M54.915,0A6.843,6.843,0,0,0,48.08,6.835a7.886,7.886,0,0,0,.58,2.631,11.022,11.022,0,0,0,.79,1.478l4.686,7.1a.891.891,0,0,0,1.558,0l4.687-7.1a10.977,10.977,0,0,0,.79-1.478,7.884,7.884,0,0,0,.579-2.631A6.843,6.843,0,0,0,54.915,0Zm5.514,9.154a10.1,10.1,0,0,1-.72,1.347l-4.687,7.1c-.092.14-.122.14-.214,0l-4.687-7.1a10.1,10.1,0,0,1-.72-1.347,7.158,7.158,0,0,1-.517-2.319,6.031,6.031,0,1,1,12.062,0A7.164,7.164,0,0,1,60.429,9.154Z"
+                                    transform="translate(-48.08)" fill="#fff" stroke="#fff" stroke-width="0.3" />
+                                    <path id="mark_2" data-name="Контур 354"
+                                    d="M115.7,64.008a3.619,3.619,0,1,0,3.619,3.619A3.623,3.623,0,0,0,115.7,64.008Zm0,6.433a2.814,2.814,0,1,1,2.814-2.814A2.818,2.818,0,0,1,115.7,70.441Z"
+                                    transform="translate(-108.864 -60.791)" fill="#fff" stroke="#fff" stroke-width="0.3" />
+                                </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <span>ул. Борщаговская, 154, ТРЦ Мармелад, 6й этаж</span>
+                    </div>
+                    <div class="contacts-page__address-subtitle">
+                        (20 мин пешком от метро Шулявская)
+                    </div>
+                </div>
+                
+                <div class="contacts-page__mail">
+                    <a href="mailto: info@skalodrom.com.ua">
+                        <i class="far fa-envelope"></i>
+                        <span>info@skalodrom.com.ua</span>
+                    </a>
+                </div>
+
+                <ul class="contacts-page__socials">
+                    <li><a href="#"><img src="img/telegram.svg" alt=""></a></li>
+                    <li><a href="#"><img src="img/viber.svg" alt=""></a></li>
+                    <li><a href="#"><img src="img/facebook-messenger-3.svg" alt=""></a></li>
+                </ul>
+
+                <div class="contacts-page__schedule">
+                    <div class="contacts-page__schedule-title">ГРАФИК РАБОТЫ:</div>
+                    <div class="contacts-page__schedule-item">Понедельник - Пятница: 10:00 - 22:00</div>
+                    <div class="contacts-page__schedule-item">Суббота, Воскресенье: 10:00 - 20:00</div>
+                </div>
+
+                <div class="contacts-page__foot">
+                    «ЦЕХ» - это скалодром, созданный профессиональными скалолазами для всех и каждого, кому полюбился 
+этот вид спорта! С радостью представляем Вам мир скалолазания.
+                </div>
+               
+            </div>
+            <div class="contacts-page__map">
+                <iframe src="https://snazzymaps.com/embed/289805" width="100%" height="480px" style="border:none;"></iframe>
+            </div>
+           </div>
+            
+        </div>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__wrap">
+        <div class="contacts__inner">
+          <div class="contacts__item">
+            <div class="contacts__adress__title">
+              Адрес:
+            </div>
+            <div class="contacts__adress__desc">
+              ул. Борщаговская, 154<br>
+              ТРЦ Мармелад, 6й этаж
+            </div>
+          </div>
+          <div class="contacts__item">
+            <div class="contacts__adress__title">
+              Телефон:
+            </div>
+            <div class="contacts__adress__desc">
+              <a href="tel:0738773443">073 877 34 43</a><br>
+              <a href="tel:0988773443">098 877 34 43</a>
+            </div>
+          </div>
+          <div class="contacts__item">
+            <div class="contacts__adress__title">
+              Email:
+            </div>
+            <div class="contacts__adress__desc">
+              <a href="mailto:info@skalodrom.com.ua">info@skalodrom.com.ua</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="contacts__inner">
+          <div class="contacts__item">
+            <div class="contacts__ulsugi_title">
+              Услуги
+            </div>
+            <div class="contacts__ulsugi__desc">
+              <a href="#">Скалодром</a>
+            </div>
+            <div class="contacts__ulsugi__desc">
+              <a href="#">Батуты</a>
+            </div>
+            <div class="contacts__ulsugi__desc">
+              <a href="#">Паркур</a>
+            </div>
+            <div class="contacts__ulsugi__desc">
+              <a href="#">Веревочный парк</a>
+            </div>
+            <div class="contacts__ulsugi__desc">
+              <a href="#">Фитнес</a>
+            </div>
+            <div class="contacts__ulsugi__desc">
+              <a href="#">Групповые занятия</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="contacts__inner">
+          <div class="contacts__item">
+            <div class="contacts__info_title">
+              ИНФОРМАЦИЯ
+            </div>
+            <div class="contacts__info__desc">
+              <a href="#">О нашем скалодроме</a>
+            </div>
+            <div class="contacts__info__desc">
+              <a href="#">Наши услуги</a>
+            </div>
+            <div class="contacts__info__desc">
+              <a href="#">Расписание</a>
+            </div>
+            <div class="contacts__info__desc">
+              <a href="#">Для детей</a>
+            </div>
+            <div class="contacts__info__desc">
+              <a href="#">Для новичков</a>
+            </div>
+            <div class="contacts__info__desc">
+              <a href="#">Контакты</a>
+            </div>
+          </div>
+        </div>
+  
+  
+        <div class="contacts__inner">
+          <div class="contacts__item">
+            <div class="contacts__grafik_title">
+              ГРАФИК РАБОТЫ
+            </div>
+            <div class="contacts__grafik__desc">
+              Понедельник - Пятница:<br>
+              10:00 - 22:00
+            </div>
+            <div class="contacts__grafik__desc">
+              Суббота, Воскресенье:<br>
+              10:00 - 20:00
+            </div>
+            <div class="contacts__grafik__social">
+              <a href="#"><img src="img/facebook.svg" alt=""></a>
+              <a href="#"><img src="img/instagram (1).svg" alt=""></a>
+              <a href="#"><img src="img/youtube (1).svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+  
+  
+      </div>
+    </section>
+  
+    <footer class="footer">
+      <div class="footer__container">
+        © 2016 ЦЕХ - БОУЛДЕРИНГОВЫЙ СКАЛОДРОМ. ALL RIGHTS RESERVED.
+      </div>
+    </footer>
+  
+    <div class="contacts__wrap">
+      <div class="contacts__inner">
+        <div class="contacts__item">
+          <div class="contacts__adress__title">
+            Адрес:
+          </div>
+          <div class="contacts__adress__desc">
+            ул. Борщаговская, 154<br>
+            ТРЦ Мармелад, 6й этаж
+          </div>
+        </div>
+        <div class="contacts__item">
+          <div class="contacts__adress__title">
+            Телефон:
+          </div>
+          <div class="contacts__adress__desc">
+            <a href="tel:0738773443">073 877 34 43</a><br>
+            <a href="tel:0988773443">098 877 34 43</a>
+          </div>
+        </div>
+        <div class="contacts__item">
+          <div class="contacts__adress__title">
+            Email:
+          </div>
+          <div class="contacts__adress__desc">
+            <a href="mailto:info@skalodrom.com.ua">info@skalodrom.com.ua</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contacts__inner">
+        <div class="contacts__item">
+          <div class="contacts__ulsugi_title">
+            Услуги
+          </div>
+          <div class="contacts__ulsugi__desc">
+            <a href="#">Скалодром</a>
+          </div>
+          <div class="contacts__ulsugi__desc">
+            <a href="#">Батуты</a>
+          </div>
+          <div class="contacts__ulsugi__desc">
+            <a href="#">Паркур</a>
+          </div>
+          <div class="contacts__ulsugi__desc">
+            <a href="#">Веревочный парк</a>
+          </div>
+          <div class="contacts__ulsugi__desc">
+            <a href="#">Фитнес</a>
+          </div>
+          <div class="contacts__ulsugi__desc">
+            <a href="#">Групповые занятия</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contacts__inner">
+        <div class="contacts__item">
+          <div class="contacts__info_title">
+            ИНФОРМАЦИЯ
+          </div>
+          <div class="contacts__info__desc">
+            <a href="#">О нашем скалодроме</a>
+          </div>
+          <div class="contacts__info__desc">
+            <a href="#">Наши услуги</a>
+          </div>
+          <div class="contacts__info__desc">
+            <a href="#">Расписание</a>
+          </div>
+          <div class="contacts__info__desc">
+            <a href="#">Для детей</a>
+          </div>
+          <div class="contacts__info__desc">
+            <a href="#">Для новичков</a>
+          </div>
+          <div class="contacts__info__desc">
+            <a href="#">Контакты</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="contacts__inner">
+        <div class="contacts__item">
+          <div class="contacts__grafik_title">
+            ГРАФИК РАБОТЫ
+          </div>
+          <div class="contacts__grafik__desc">
+            Понедельник - Пятница:<br>
+            10:00 - 22:00
+          </div>
+          <div class="contacts__grafik__desc">
+            Суббота, Воскресенье:<br>
+            10:00 - 20:00
+          </div>
+          <div class="contacts__grafik__social">
+            <a href="#"><img src="img/facebook.svg" alt=""></a>
+            <a href="#"><img src="img/instagram (1).svg" alt=""></a>
+            <a href="#"><img src="img/youtube (1).svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__container">
+      © 2016 ЦЕХ - БОУЛДЕРИНГОВЫЙ СКАЛОДРОМ. ALL RIGHTS RESERVED.
+    </div>
+  </footer> -->
+
+  <div id="modal-1" class="modal">
+    <div class="modal__title">Записаться на тренировку</div>
+    <div class="modal__form">
+        <form action="#">
+            <div class="modal__row">
+                <div class="modal__form-item">
+                    <label>
+                        <span>Ваше имя *</span>
+                        <input type="text">
+                    </label>
+                </div>
+                <div class="modal__form-item">
+                    <label>
+                        <span>Контактный телефон *</span>
+                        <input id="phoneMask" type="text" placeholder="+38">
+                    </label>
+                </div>
+            </div>
+            <div class="modal__form-item">
+                <label>
+                    <span>Напишите вопрос который Вас интересует?</span>
+                    <textarea>
+                    </textarea>
+                </label>
+            </div>
+            <div class="modal__form-btn">
+                <button>Отправить</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="modal-2" class="modal">
+    <div class="modal__content">
+        <div class="modal__img">
+            <img width="120" src="img/checkmark-x2.png" alt="">
+        </div>
+        <div class="modal__success-title">УРА! Мы вас уже записали!</div>
+        <div class="modal__success-subtitle">С Вами скоро свяжутся</div>
+    </div>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/simplebar.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

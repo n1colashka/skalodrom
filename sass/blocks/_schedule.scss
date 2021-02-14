@@ -1,0 +1,297 @@
+.schedule {
+
+    ul {
+        list-style: none;
+    }
+
+    &__head {
+        text-align: center;
+        padding-bottom: 75px;
+
+        @media (max-width: 1024px) {
+            padding-bottom: 35px;
+        }
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__subtitle {
+        margin: 0;
+    }
+
+
+    &__inner {
+        padding-top: 50px;
+        padding-bottom: 70px;
+
+        @media (max-width: 1024px) {
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__days {
+        display: flex;
+        margin-left: -17px;
+        margin-right: -17px;
+        padding-left: 0;
+        flex-wrap: wrap;
+
+        @media (max-width: 1024px) {
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+    }
+
+    &__day {
+        border-radius: 3px;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+        font-size: 20px;
+        padding: 15px;
+        width: calc(100% / 7 - 34px);
+        margin-left: 17px;
+        margin-right: 17px;
+        background-color: rgb(33, 33, 33);
+        transition: .2s ease-in-out;
+        &.active {
+            background-color: rgb(224, 122, 0);
+        }
+
+        @media (max-width: 1024px) {
+            width: calc(100% / 7 - 10px);
+            padding: 5px;
+            font-size: 16px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+
+    &__days-title {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 15px;
+    }
+
+    &__tables {
+        padding: 25px 50px;
+        padding-bottom: 0;
+        background-color: rgb(33, 33, 33);
+        border-radius: 5px;
+        margin-bottom: 20px;
+        overflow-x: auto;
+
+        @media (max-width: 1280px) {
+            padding: 25px;
+        }
+    }
+
+    &__table {
+        display: none;
+
+        @media (max-width: 1280px) {
+            table td, table th {
+                font-size: 14px;
+                padding: 14px;
+            }
+            table td:nth-child(6) {
+                font-size: 16px;
+                line-height: 20px;
+            }
+            
+        }
+        
+        &.active {
+            display: block;
+        }
+
+        a {
+            color: #fff;
+        }
+
+        th {
+            padding: 13px 30px;
+            text-transform: uppercase;
+            text-align: center;
+            background-color: rgb(44, 44, 44);
+
+            &:first-child {
+                border-radius: 3px 0 0 3px;
+                min-width: 125px;
+            }
+            &:last-child {
+                border-radius: 0 3px 3px 0;
+            }
+
+            &:nth-child(3) {
+                width: 22%;
+            }
+            &:nth-child(5) {
+                width: 15%;
+            }
+
+            &:nth-child(6) {
+                padding: 13px 25px;
+            }
+
+            &:nth-child(7) {
+                width: 25%;
+            }
+            
+            & + th {
+                border-left: 1px solid rgba(0, 0, 0, 0.11);
+            }
+        }
+
+        tr:last-child {
+            td {
+                border-bottom: none;
+            }
+        }
+
+        td {
+            padding: 16px 25px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+            &:nth-child(3) {
+                padding: 16px 20px;
+            }
+            &:nth-child(1) {
+                padding: 16px 24px;
+            }
+            &:nth-child(6) {
+                font-size: 20px;
+                line-height: 26px;
+                font-weight: 700;
+                width: 12%;
+            }
+            
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+
+            @media (max-width: 900px) {
+                min-width: 1050px;
+            }
+        }
+    }
+
+    &__foot {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin: -18px;
+    }
+
+    &__foot-item {
+        margin: 18px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    &__btn {
+        display: block;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 19px;
+        letter-spacing: 0.75px;
+        text-decoration: none;
+        padding: 13px 18px;
+        background-color: rgb(224, 122, 0);
+        text-align: center;
+        border-radius: 3px;
+    }
+}
+
+.element {
+    position: relative;
+    padding-left: 24px;
+    &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 15px;
+        height: 15px;
+        background-color: rgb(201, 198, 198);
+        border-radius: 6px 2px 6px 2px;
+    }
+
+    &--blue::before {
+        background-color: rgb(46, 136, 210);
+    }
+    &--orange::before {
+        background-color: rgb(240, 109, 56);
+    }
+    &--yellow::before {
+        background-color: rgb(251, 213, 73);
+    }
+    &--green::before {
+        background-color: rgb(86, 161, 39);
+    }
+}
+
+.battery {
+    position: relative;
+    text-align: center;
+
+    &__head {
+        width: 16px;
+        height: 4px;
+        margin-bottom: -2px;
+        border-radius: 4px;
+        background-color: #fff;
+        margin: 0 auto;
+    }
+
+    &__body {
+        position: relative;
+        margin: 0 auto;
+        height: 40px;
+        width: 26px;
+        border-radius: 4px;
+        border: 2px solid #fff;
+    }
+
+    &__item {
+        position: absolute;
+        left: 0;
+        bottom: 2px;
+        right: 0;
+        margin: 0 auto;
+        width: 18px;
+        height: 10px;
+        border-radius: 1px;
+    }
+
+    &--1 {
+        .battery__item {
+            background-color: rgb(19, 209, 11);
+        }
+    }
+    &--2 {
+        .battery__item {
+            background-color: rgb(221, 136, 0);
+            &:nth-child(2) {
+                bottom: 13px;
+            }
+        }
+    }
+    &--3 {
+        .battery__item {
+            background-color: rgb(209, 11, 11);
+            &:nth-child(2) {
+                bottom: 13px;
+            }
+            &:nth-child(3) {
+                bottom: auto;
+                top: 2px;
+            }
+        }
+    }
+}

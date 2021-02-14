@@ -1,0 +1,63 @@
+.why
+  background-image: url("../img/why-bg.png")
+  background-repeat: no-repeat
+  background-position: top center
+  background-size: cover
+  color: #fff
+  &__wrap
+    display: flex
+    justify-content: space-between
+    padding-bottom: 129px
+  &__title
+    padding-top: 78.5px
+    font-size: 45px
+    line-height: 85px
+    letter-spacing: 3.6px
+    text-transform: uppercase
+    font-weight: 700
+  &__subtitle
+    font-size: 17px
+    line-height: 23px
+    font-weight: 700
+    margin-bottom: 85px
+    position: relative
+    padding-left: 6.5px
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      height: 24px
+      width: 1px
+      background-color: rgb(255, 255, 255)
+      
+  &__item
+    font-weight: 700
+    width: 25%
+    position: relative
+    border-right: 1px solid rgba(255, 255, 255, 0.08)
+    padding-left: 55px
+    &:last-child
+      border-right: 0px solid rgba(255, 255, 255, 0.08)
+    &:first-child
+      padding-left: 0px
+      & img
+        left: 0px
+    & img
+      position: absolute
+      top: 0
+      left: 55px
+      width: 80px
+      height: 80px
+  &__img-num
+    padding-left: 105px
+    font-size: 52px
+  &__img-title
+    padding-left: 105px
+    font-size: 21px
+  &__desc
+    width: 220px
+    font-size: 14px
+    line-height: 21px
+    font-weight: 400
+    padding-top: 20.7px

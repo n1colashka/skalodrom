@@ -1,0 +1,336 @@
+.header
+  background-color: #000 
+  height: 82px
+  font-weight: 700
+
+
+.navbar
+ display: flex
+ justify-content: space-between
+ color: #ffff
+ height: 82px
+ &__burger
+   display: none
+   flex-direction: column
+   align-items: center
+   justify-content: center
+   width: 56px
+   flex-shrink: 0
+   background-color: rgb(224, 122, 0)
+
+   span 
+     width: 24px
+     height: 2px;
+     margin-bottom: 5px
+     border-radius: 5px 
+     background-color: #fff
+    
+ &__logo img
+   height: 88px
+   width: 95px
+ &__right
+   display: flex
+ &__row
+   display: flex
+   justify-content: space-between
+   width: 740px
+ &__item
+   font-size: 16px
+   line-height: 20px
+   padding: 34px 0 30px
+   transition: all 2s 
+   position: relative
+   & i 
+    font-size: 9px
+    position: absolute
+    top: 5px
+    right: -15px 
+   &:hover a
+    color: rgb(255, 139, 0)
+    border-bottom: 1px solid #e07a00
+    padding-bottom: 5px
+    transition: all 0.3s 
+    & i
+      transition: all 0.3s
+      transform: scaleY(-1)
+   &:hover li a
+    cursor: pointer
+    text-transform: none
+    text-decoration: none
+    color: #000
+    border-bottom: 0px solid #e07a00
+    padding-bottom: 0px
+   &:hover ul
+    display: block
+   & ul
+    margin: 0 0 0 0
+    padding: 0 0 0 0
+    top: 82px
+    color: #e07a00
+    position: absolute
+    z-index: 1000
+    background-color: #fff
+    display: none
+    width: 220px
+    & li
+     list-style: none
+     padding: 18px 0px 15.5px 0px
+     border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+     margin: 0px 23px
+     & a
+      cursor: pointer
+      text-transform: none
+      text-decoration: none
+      color: #000
+      &:hover
+        color: rgb(255, 139, 0)
+        border-bottom: 0px solid #e07a00
+        padding-bottom: 0px
+        transition: all 0.3s 
+      
+
+   & a
+    text-decoration: none
+    color: #fff
+    display: block
+    position: relative
+    transition: all 0.3s
+    &:hover
+     color: rgb(255, 139, 0)
+     border-bottom: 1px solid #e07a00
+     padding-bottom: 5px
+     transition: all 0.3s 
+    &:hover i
+      transition: all 0.3s
+      transform: scaleY(-1)
+ &__language
+   padding: 14px 30px 0px 16px
+   margin: 20px 0 0px
+   font-size: 15px
+   position: relative
+   font-weight: 700
+   cursor: pointer
+   &::before
+     content: ''
+     position: absolute
+     height: 44px
+     width: 1px
+     background-color: rgba(255, 255, 255, 0.3)
+     top: 0px
+     right: 0px
+   &::after
+     content: ''
+     position: absolute
+     height: 44px
+     width: 1px
+     background-color: rgba(255, 255, 255, 0.3)
+     top: 0px
+     left: 1px
+   &:hover a
+     color: rgb(255, 139, 0)
+     border-bottom: 1px solid #e07a00
+     padding-bottom: 5px
+     transition: all 0.3s 
+     & i
+      transition: all 0.3s
+      transform: scaleY(-1)
+   &:hover li a
+      cursor: pointer
+      text-transform: none
+      text-decoration: none
+      color: rgb(114, 114, 114)
+      border-bottom: 0px solid #e07a00
+      padding-bottom: 0px
+    
+   &:hover ul
+    display: block
+   & ul
+    margin: 0 0 0 0
+    padding: 0 0 0 0
+    top: 62px
+    color: #e07a00
+    position: absolute
+    z-index: 1000
+    background-color: #fff
+    left: 0px
+    display: none
+    width: 62px
+    & li
+     list-style: none
+     padding: 18px 0px 15.5px 0px
+     border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+     margin: 0px 11px
+     text-align: center
+     &:last-child
+      border-bottom: 0px solid rgba(0, 0, 0, 0.1)
+     & a
+      cursor: pointer
+      text-transform: none
+      text-decoration: none
+      color: #000
+      &:hover
+        color: rgb(255, 139, 0)
+        border-bottom: 0px solid #e07a00
+        padding-bottom: 0px
+        transition: all 0.3s 
+   & a
+    text-decoration: none
+    color: #fff
+    display: block
+    position: relative
+    transition: all 0.3s
+    &:hover
+     color: rgb(255, 139, 0)
+     border-bottom: 1px solid #e07a00
+     padding-bottom: 5px
+     transition: all 0.3s 
+    &:hover i
+      transition: all 0.3s
+      transform: scaleY(-1)
+   & i 
+    font-size: 9px
+    position: absolute
+    top: 3px
+    right: -12px
+ &__mark
+   padding: 27px 30px
+   font-size: 27px
+   cursor: pointer
+   svg
+    transition: all 0.3s
+   &:hover
+    & svg
+      & #mark_1
+        fill: #e07a00
+      & #mark_2
+        fill: #e07a00
+   &:hover
+     & ul
+       display: block
+   & ul
+     position: absolute
+     background-color: #fff
+     padding: 0
+     top: 55px
+     right: 225px
+     max-width: 230px
+     height: 78px
+     display: none
+     z-index: 1111
+     & li
+      list-style: none
+      padding: 0px 0px 0px 0px
+      border-bottom: 0px solid rgba(0, 0, 0, 0.1)
+      margin: 0px 21px
+      text-align: left
+      & a 
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.32px
+        text-decoration: none
+        color: #000
+        font-weight: 400
+        transition: all 0.3s
+        &:hover
+          color: rgb(224, 122, 0)
+        & span
+          font-weight: 700
+          
+
+    
+
+    
+
+
+   
+ &__contacts
+   margin-top: 15px
+   padding-left: 4px
+   &:hover ul
+    display: block
+   &:hover .navbar__phone::before
+    display: block
+    color: rgb(224, 122, 0)
+   & ul
+    margin: 0 0 0 0
+    padding: 0 0 0 0
+    top: 82px
+    color: #e07a00
+    position: absolute
+    z-index: 1000
+    background-color: #fff  
+    width: 153px
+    display: none
+    & li
+     list-style: none
+     padding: 15px 0px 10.5px 9px
+     border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+     margin: 0px 13px
+     padding-left: 25px
+     position: relative
+     &.contacts_icons
+      padding: 11.5px 0px 10px 0px
+      margin: 0px 13px
+      display: flex
+      justify-content: space-between
+     & a 
+      text-decoration: none
+      color: #000
+      font-weight: 400
+      font-size: 19px
+      line-height: 24px
+      letter-spacing: 0.38px
+      transition: all 0.3s
+      &:hover
+        color: #e07a00
+      & .phone_logo
+        position: absolute
+        top: 17px
+        left: 3px
+
+     
+       
+ &__mob
+   display: none
+ &__mob-logo img
+   width: 40px
+   height: 40px 
+    
+ &__phone
+   font-size: 26px
+   text-decoration: none
+   color: #fff
+   display: block
+   font-weight: 700
+   margin-left: 9px
+   position: relative
+   i
+     display: none
+   
+   &::before
+    content: '•••'
+    position: absolute
+    transform: translate(-50%, -50%) rotate(90deg)
+    font-size: 8px
+    letter-spacing: 2.5px
+    top: 16px
+    left: -8px
+    transition: all 0.3s
+ &__button
+   text-transform: none
+   border-bottom: 1px dashed #e07a00
+   color: #e07a00
+   border: none
+   background-color: transparent
+   cursor: pointer
+   font-size: 15.5px
+   outline: none
+   font-weight: 700
+   padding: 0
+   & span
+    padding-bottom: 2.5px
+    border-bottom: 1px dashed #e07a00
+  
+
+
+  

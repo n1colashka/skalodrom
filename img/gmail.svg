@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <g id="gmail" transform="translate(0.138)">
+    <rect id="Прямоугольник_414" data-name="Прямоугольник 414" width="44" height="44" rx="22" transform="translate(-0.138)"/>
+    <g id="gmail-2" data-name="gmail" transform="translate(10.368 12.451)">
+      <g id="Сгруппировать_542" data-name="Сгруппировать 542" transform="translate(0 0)">
+        <path id="Контур_385" data-name="Контур 385" d="M21.622,64H2.237A2.238,2.238,0,0,0,0,66.237V79.657a2.238,2.238,0,0,0,2.237,2.237H21.622a2.238,2.238,0,0,0,2.237-2.237V66.237A2.238,2.238,0,0,0,21.622,64Zm-2.633,1.491L11.93,71.065,4.87,65.491ZM20.877,80.4H2.982V67.946l8.947,6.882,8.947-6.883Z" transform="translate(0 -64)" fill="#d0d0d0"/>
+      </g>
+    </g>
+  </g>
+</svg>

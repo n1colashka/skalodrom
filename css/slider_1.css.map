@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAC;EACd,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,IAAI;CAIa;;AANhC,AAGE,eAHa,CAGX,IAAI,CAAC;EACL,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,KAAK;EAClB,KAAK,EAAE,OAAgB;CAAG",
+    "sources": [
+        "../sass/blocks/slider_1.sass"
+    ],
+    "names": [],
+    "file": "slider_1.css"
+}

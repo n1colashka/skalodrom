@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.033" height="32" viewBox="0 0 32.033 32">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00b2ff"/>
+      <stop offset="1" stop-color="#006aff"/>
+    </linearGradient>
+  </defs>
+  <g id="facebook-messenger-3" transform="translate(-50 -50.201)">
+    <path id="Контур_386" data-name="Контур 386" d="M66.016,50.2C56.993,50.2,50,56.8,50,65.722A15.177,15.177,0,0,0,55.03,77.2a1.289,1.289,0,0,1,.432.911l.087,2.846a1.283,1.283,0,0,0,1.8,1.133l3.177-1.4a1.279,1.279,0,0,1,.854-.064,17.437,17.437,0,0,0,4.637.615c9.023,0,16.016-6.6,16.016-15.521S75.04,50.2,66.016,50.2Z" transform="translate(0 0)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+    <path id="Контур_387" data-name="Контур 387" d="M128.486,194l4.7-7.456a2.406,2.406,0,0,1,3.474-.641l3.741,2.8a.963.963,0,0,0,1.157,0l5.053-3.831a.76.76,0,0,1,1.1,1.011l-4.7,7.453a2.406,2.406,0,0,1-3.474.641l-3.741-2.8a.963.963,0,0,0-1.157,0l-5.056,3.834A.76.76,0,0,1,128.486,194Z" transform="translate(-72.086 -123.737)" fill="#fff" fill-rule="evenodd"/>
+  </g>
+</svg>
