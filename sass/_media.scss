@@ -153,6 +153,16 @@
     }
 }
 
+@media (min-width: 1201px) {
+    .navbar {
+        &__item:hover {
+            ul {
+                display: block
+            }
+        }
+    }
+}
+
 @media (max-width: 1200px) {
     .header {
         height: 50px;

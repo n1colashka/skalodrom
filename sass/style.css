@@ -370,10 +370,6 @@ html {
   padding-bottom: 0px;
 }
 
-.navbar__item:hover ul {
-  display: block;
-}
-
 .navbar__item ul {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
@@ -4456,6 +4452,12 @@ html {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding-bottom: 80px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .navbar__item:hover ul {
+    display: block;
   }
 }
 
