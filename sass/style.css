@@ -179,14 +179,14 @@ html {
 
 .modal__row .modal__form-item {
   width: calc(50% - 20px);
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .modal__form-item {
   font-size: 14px;
   line-height: 19px;
   margin-bottom: 24px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .modal__form-item span {
@@ -4191,11 +4191,11 @@ html {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-left: 0;
-  margin: -18px;
+  margin: -9px -18px;
 }
 
 .schedule__foot-item {
-  margin: 18px;
+  margin: 9px 18px;
   font-size: 14px;
   line-height: 19px;
 }
@@ -4470,7 +4470,7 @@ html {
         -ms-flex-align: center;
             align-items: center;
     height: auto;
-    padding-right: 15px;
+    padding-right: 0;
   }
   .navbar__row {
     display: none;
@@ -4538,7 +4538,7 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 10px;
+    margin-left: 0;
     padding: 0 12px;
     line-height: 1;
   }
@@ -4549,10 +4549,13 @@ html {
     left: 1px;
     top: 130%;
   }
+  .navbar__language i {
+    right: -13px;
+  }
   .navbar__mark {
     padding: 0;
     margin: 0;
-    margin-left: 10px;
+    margin-left: 0;
     padding: 0 12px;
     border-left: 1px solid rgba(255, 255, 255, 0.17);
     border-right: 1px solid rgba(255, 255, 255, 0.17);
@@ -4593,6 +4596,7 @@ html {
   }
   .navbar__phone {
     font-size: 16px;
+    margin-left: 0;
   }
   .navbar__phone::before {
     display: none;
@@ -5047,7 +5051,7 @@ html {
   .slider__wrap__title {
     font-size: 24px;
     line-height: 1;
-    right: 0;
+    right: 65px;
   }
   .slider2__item.slick-center .slider__wrap__title {
     font-size: 43px;
@@ -5117,6 +5121,11 @@ html {
 }
 
 @media (max-width: 600px) {
+  .prices__inner-nav {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .children__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5214,8 +5223,11 @@ html {
     margin-bottom: 20px;
     max-width: 500px;
   }
+  .navbar__right {
+    margin-right: 10px;
+  }
   .navbar__logo {
-    margin-left: 50px;
+    margin-left: 90px;
   }
   .slider3__item .slider__3-fon {
     height: 150px;
@@ -5312,9 +5324,6 @@ html {
   }
   .slider_3 .arrow_right {
     right: 100px;
-  }
-  .slider__wrap__title {
-    right: 20px;
   }
   .slider2__item.slick-center .slider__wrap__title {
     right: -10px;

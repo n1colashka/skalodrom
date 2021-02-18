@@ -19,7 +19,15 @@ $(function(){
     variableWidth: true,
       prevArrow: '<img class="arrow_left" src="img/arrow_left.svg" alt="">',
       nextArrow: '<img class="arrow_right" src="img/arrow_left.svg" alt="">',
-    dots: true
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 430,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+    ]
   });
 
   $('.slider__inner3').slick({
